@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+  <title>Simple Screen Recorder</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link href="../node_modules/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="./render.js"></script>
+
+</head>
+
+<body  class="bg-gray-700">
+  <!-- <div class="p-4">
+    <h1 class="text-5xl text-center text-white">NRecorder</h1>
+  </div> -->
+
+  <!-- Canvas -->
+  <div class="w-100 h-100 mr-1 ml-1 mt-1 border-2 rounded border-white" style="-webkit-app-region: drag">
+    <video poster="../public/images/Nrec.png">
+    </video>
+  </div>
+  <!-- Buttns section -->
+  <div class="flex flex-row justify-center mt-2 pb-2">
+    <!-- Screen btn -->
+    <button id="videoSelectBtn"
+      class="transition focus:outline-none bg-white hover:bg-gray-200  text-red-400 truncate font-bold mr-2 p-1 rounded-full">
+      <img src="../public/icons/screen.png" class="w-10" alt="">
+    </button>
+    <!-- Start btn -->
+    <button id="startBtn" class="hidden transition focus:outline-none bg-white hover:bg-gray-200 mr-2 p-1 rounded-full">
+      <img src="../public/icons/record.png" class="w-10" id="startIcon" alt="">
+    </button>
+    <!-- Stop btn -->
+    <button id="stopBtn" class="hidden transition focus:outline-none bg-white hover:bg-gray-200 mr-2 p-1 rounded-full">
+      <img src="../public/icons/stop.png" class="w-10" alt="">
+    </button>
+    <!-- Quit btn -->
+    <button id="quitBtn" class="transition focus:outline-none bg-white hover:bg-gray-200 mr-2 p-1 rounded-full">
+      <img src="../public/icons/cancelled.png" class="w-10" alt="">
+    </button>
+    <!-- Minimize btn -->
+    <button id="minimizeBtn" class="transition focus:outline-none bg-white hover:bg-gray-200 p-1 rounded-full">
+      <img src="../public/icons/minimize.png" class="w-10" alt="">
+    </button>
+    
+  </div>
+  <script>
+    import "tailwindcss/tailwind.css"
+  </script>
+</body>
+
+</html>
